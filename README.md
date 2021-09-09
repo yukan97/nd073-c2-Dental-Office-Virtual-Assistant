@@ -1,54 +1,31 @@
-# README Template
+# Dental Office Virtual Assistant
 
-Below is a template provided for use when building your README file for students.
-
-# Project Title
-
-Project description goes here.
+In this project, was created a customer support chatbot that resides on [Contoso Dentistry](https://victorious-moss-069d6bf10.azurestaticapps.net/) website. The bot uses Azure QnA Maker and LUIS to answer patient questions and helps them schedule appointments.
 
 ## Getting Started
 
-Instructions for how to get a copy of the project running on your local machine.
+Node.js vesion 
 
 ### Dependencies
-
+All dependencies can be installed by running the following command in the ContosoDentistryChatBot directory
 ```
-Examples here
-```
-
-### Installation
-
-Step by step explanation of how to get a dev environment running.
-
-List out the steps
-
-```
-Give an example here
+npm install
 ```
 
 ## Testing
 
-Explain the steps needed to run any automated tests
-
-### Break Down Tests
-
-Explain what each test does and why
-
+To test the code be sure to install [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator).
+First start the bot from ContosoDentistryChatBot folder by running command
 ```
-Examples here
+npm start
+```
+Run the Bot Framework Emulator, click on the 'Open Bot', in the Bot URL pass the following link
+```
+http://localhost:3978/api/messages
 ```
 
-## Project Instructions
-
-This section should contain all the student deliverables for this project.
-
-## Built With
-
-* [Item1](www.item1.com) - Description of item
-* [Item2](www.item2.com) - Description of item
-* [Item3](www.item3.com) - Description of item
-
-Include all items used to build project.
+## Project Structure
+For project to pass all required CI/CD tests, the overall architecture was split into 3 separate brances: chatbot, scheduler, website.
 
 ## License
 
